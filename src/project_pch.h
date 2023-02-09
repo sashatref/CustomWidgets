@@ -78,4 +78,5 @@
 #include <HelperLibrary/Widgets/extendedwidget.h>
 #include <HelperLibrary/ExtendApp/uilanginfo.h>
 #include <HelperLibrary/anymacro.h>
-#include <HelperLibrary/Perfomance/scopetimer.h>
+#include <HelperLibrary/scopetimer.h>
+#include <HelperLibrary/ivariant.h>

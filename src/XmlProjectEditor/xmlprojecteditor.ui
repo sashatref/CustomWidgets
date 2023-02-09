@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XmlProjectEditor</class>
+ <widget class="QWidget" name="XmlProjectEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="contextMenuPolicy">
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::InternalMove</enum>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="indentation">
+      <number>20</number>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>true</bool>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>true</bool>
+     </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
+     <property name="headerHidden">
+      <bool>false</bool>
+     </property>
+     <property name="expandsOnDoubleClick">
+      <bool>false</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Узел</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Атрибуты</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Значение</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionAddSubNode">
+   <property name="text">
+    <string>Добавить подузел</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить подузел</string>
+   </property>
+  </action>
+  <action name="actionRemoveNode">
+   <property name="text">
+    <string>Удалить узел</string>
+   </property>
+  </action>
+  <action name="actionExpandAll">
+   <property name="text">
+    <string>Развернуть все</string>
+   </property>
+   <property name="toolTip">
+    <string>Развернуть все</string>
+   </property>
+  </action>
+  <action name="actionCollapseAll">
+   <property name="text">
+    <string>Свернуть все</string>
+   </property>
+   <property name="toolTip">
+    <string>Свернуть все</string>
+   </property>
+  </action>
+  <action name="actionCopyNode">
+   <property name="text">
+    <string>Копировать узел</string>
+   </property>
+   <property name="toolTip">
+    <string>Копировать узел</string>
+   </property>
+  </action>
+  <action name="actionPasteNode">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Вставить узел</string>
+   </property>
+   <property name="toolTip">
+    <string>Вставить узел</string>
+   </property>
+  </action>
+  <action name="actionExpandSubItems">
+   <property name="text">
+    <string>Развернуть подузлы</string>
+   </property>
+   <property name="toolTip">
+    <string>Развернуть подузлы</string>
+   </property>
+  </action>
+  <action name="actionCollapseSubItems">
+   <property name="text">
+    <string>Свернуть подузлы</string>
+   </property>
+   <property name="toolTip">
+    <string>Свернуть подузлы</string>
+   </property>
+  </action>
+  <action name="actionEditNode">
+   <property name="text">
+    <string>Редактировать узел</string>
+   </property>
+   <property name="toolTip">
+    <string>Редактировать узел</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VarianMapEditor</class>
+ <widget class="QDialog" name="VarianMapEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Редактор QVariantMap</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QToolButton" name="loadFromFileButton">
+       <property name="toolTip">
+        <string>Загрузить из файла</string>
+       </property>
+       <property name="statusTip">
+        <string>Загрузить из файла</string>
+       </property>
+       <property name="whatsThis">
+        <string>Загрузить из файла</string>
+       </property>
+       <property name="text">
+        <string>Загрузить из файла</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/Open.png</normaloff>:/CustomWidgets/Images/Open.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="saveToFileButton">
+       <property name="toolTip">
+        <string>Сохранить в файл</string>
+       </property>
+       <property name="statusTip">
+        <string>Сохранить в файл</string>
+       </property>
+       <property name="whatsThis">
+        <string>Сохранить в файл</string>
+       </property>
+       <property name="text">
+        <string>Сохранить в файл</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/_save.png</normaloff>:/CustomWidgets/Images/_save.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="addButton">
+       <property name="toolTip">
+        <string>Добавить строку</string>
+       </property>
+       <property name="statusTip">
+        <string>Добавить строку</string>
+       </property>
+       <property name="whatsThis">
+        <string>Добавить строку</string>
+       </property>
+       <property name="text">
+        <string>Добавить строку</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/add.png</normaloff>:/CustomWidgets/Images/add.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="removeButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Удалить выбранный</string>
+       </property>
+       <property name="statusTip">
+        <string>Удалить выбранный</string>
+       </property>
+       <property name="whatsThis">
+        <string>Удалить выбранный</string>
+       </property>
+       <property name="text">
+        <string>Удалить выбранный</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/Delete-icon.png</normaloff>:/CustomWidgets/Images/Delete-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::NoDragDrop</enum>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Ключ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Значение</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="closeButton">
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/Cancel.png</normaloff>:/CustomWidgets/Images/Cancel.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="applyButton">
+       <property name="text">
+        <string>Принять</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../CustomWidgets_images.qrc">
+         <normaloff>:/CustomWidgets/Images/Apply.png</normaloff>:/CustomWidgets/Images/Apply.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>38</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../CustomWidgets_images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

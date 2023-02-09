@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogWindow2</class>
+ <widget class="QWidget" name="LogWindow2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="childrenCollapsible">
+      <bool>true</bool>
+     </property>
+     <widget class="ImageListView" name="listView"/>
+     <widget class="QWidget" name="editorWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Размер шрифта:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="fontSizeCombo">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="currentText">
+            <string notr="true">12</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="lineWrapMode">
+          <enum>QTextEdit::WidgetWidth</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>Выделить все (Ctrl+A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Выделить все</string>
+   </property>
+  </action>
+  <action name="actionUnselectAll">
+   <property name="text">
+    <string>Убрать выделение</string>
+   </property>
+   <property name="toolTip">
+    <string>Убрать выделение</string>
+   </property>
+  </action>
+  <action name="actionClearAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/CustomWidgets/Images/erasew.png</normaloff>:/CustomWidgets/Images/erasew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистить лог (Ctrl+DEL)</string>
+   </property>
+   <property name="toolTip">
+    <string>Очистить лог</string>
+   </property>
+  </action>
+  <action name="actionScrollToEnd">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/CustomWidgets/Images/down.png</normaloff>:/CustomWidgets/Images/down.png</iconset>
+   </property>
+   <property name="text">
+    <string>Промотать в конец списка (End)</string>
+   </property>
+   <property name="toolTip">
+    <string>Промотать в конец списка</string>
+   </property>
+  </action>
+  <action name="actionScrolToStart">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/CustomWidgets/Images/up.png</normaloff>:/CustomWidgets/Images/up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Промотать в начало списка (Home)</string>
+   </property>
+   <property name="toolTip">
+    <string>Промотать в начало списка</string>
+   </property>
+  </action>
+  <action name="actionCopyAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/CustomWidgets/Images/copy-icon.png</normaloff>:/CustomWidgets/Images/copy-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Скопировать все в буфер (Ctrl+Shift+C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Скопировать все в буфер</string>
+   </property>
+  </action>
+  <action name="actionCopySelected">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/CustomWidgets/Images/copy-icon.png</normaloff>:/CustomWidgets/Images/copy-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Скопировать выделеное в буфер (Ctrl+C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Скопировать выделеное в буфер</string>
+   </property>
+  </action>
+  <action name="actionShowTextDetail">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать боковую панель</string>
+   </property>
+   <property name="toolTip">
+    <string>Показать боковую панель</string>
+   </property>
+  </action>
+  <action name="actionWordWrap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Перенос текста</string>
+   </property>
+   <property name="toolTip">
+    <string>Перенос текста</string>
+   </property>
+  </action>
+  <action name="actionConfigStyle">
+   <property name="text">
+    <string>Настройки стиля</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageListView</class>
+   <extends>QListView</extends>
+   <header>LogWindow2/priv/imagelistview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

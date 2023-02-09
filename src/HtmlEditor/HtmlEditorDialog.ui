@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HtmlEditorDialog</class>
+ <widget class="QDialog" name="HtmlEditorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HtmlEditor</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="CustomWidgetsQt::HtmlEditor" name="htmlEditor"/>
+   </item>
+   <item>
+    <widget class="QWidget" name="hWidget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>870</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="closeButton">
+        <property name="toolTip">
+         <string>Закрыть</string>
+        </property>
+        <property name="statusTip">
+         <string>Закрыть</string>
+        </property>
+        <property name="whatsThis">
+         <string>Закрыть</string>
+        </property>
+        <property name="text">
+         <string>Закрыть</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../CustomWidgets_images.qrc">
+          <normaloff>:/CustomWidgets/Images/Cancel.png</normaloff>:/CustomWidgets/Images/Cancel.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>38</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="saveAsTextButton">
+        <property name="toolTip">
+         <string>Сохранить как текст и закрыть</string>
+        </property>
+        <property name="statusTip">
+         <string>Сохранить как текст и закрыть</string>
+        </property>
+        <property name="whatsThis">
+         <string>Сохранить как текст и закрыть</string>
+        </property>
+        <property name="text">
+         <string>Сохранить как текст и закрыть</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../CustomWidgets_images.qrc">
+          <normaloff>:/CustomWidgets/Images/SaveText.png</normaloff>:/CustomWidgets/Images/SaveText.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>38</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="saveAsHtmlButton">
+        <property name="toolTip">
+         <string>Сохранить как HTML и закрыть</string>
+        </property>
+        <property name="statusTip">
+         <string>Сохранить как HTML и закрыть</string>
+        </property>
+        <property name="whatsThis">
+         <string>Сохранить как HTML и закрыть</string>
+        </property>
+        <property name="text">
+         <string>Сохранить как HTML и закрыть</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../CustomWidgets_images.qrc">
+          <normaloff>:/CustomWidgets/Images/SaveHtml.png</normaloff>:/CustomWidgets/Images/SaveHtml.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>38</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomWidgetsQt::HtmlEditor</class>
+   <extends>QMainWindow</extends>
+   <header>CustomWidgets/HtmlEditor/HtmlEditor.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../CustomWidgets_images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/CustomWidgets">
+        <file>Images/HtmlEditor/editcopy.png</file>
+        <file>Images/HtmlEditor/editcut.png</file>
+        <file>Images/HtmlEditor/editpaste.png</file>
+        <file>Images/HtmlEditor/editredo.png</file>
+        <file>Images/HtmlEditor/editundo.png</file>
+        <file>Images/HtmlEditor/exportpdf.png</file>
+        <file>Images/HtmlEditor/filenew.png</file>
+        <file>Images/HtmlEditor/fileopen.png</file>
+        <file>Images/HtmlEditor/fileprint.png</file>
+        <file>Images/HtmlEditor/filesave.png</file>
+        <file>Images/HtmlEditor/textbold.png</file>
+        <file>Images/HtmlEditor/textcenter.png</file>
+        <file>Images/HtmlEditor/textitalic.png</file>
+        <file>Images/HtmlEditor/textjustify.png</file>
+        <file>Images/HtmlEditor/textleft.png</file>
+        <file>Images/HtmlEditor/textright.png</file>
+        <file>Images/HtmlEditor/textunder.png</file>
+        <file>Images/HtmlEditor/zoomin.png</file>
+        <file>Images/HtmlEditor/zoomout.png</file>
+        <file>Images/SaveHtml.png</file>
+        <file>Images/SaveText.png</file>
+        <file>Images/HtmlEditor/add-image.png</file>
+        <file>LogWindow2/settings/layout2.lwbin</file>
+    </qresource>
+</RCC>
